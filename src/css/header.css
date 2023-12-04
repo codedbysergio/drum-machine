@@ -1,0 +1,30 @@
+.power-button-container {
+    grid-area: power;
+    /* border: 3px solid pink; */
+    margin-left: 1.3rem;
+    margin-top: 0.75rem;
+}
+
+.power-button {
+    height: 2rem;
+    background-color: hsl(100, 0%, 50%);
+    border: 1px solid hsl(100, 0%, 30%);
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: bold;
+    padding: 0rem 0.65rem;
+}
+
+.device-name {
+    height: 100%;
+    grid-area: name;
+    text-align: right;
+    align-items: center;
+    /* border: 3px solid red; */
+    font-family: 'Audiowide', cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: red;
+    margin-right: 1rem;
+    margin-top: 0.25rem;
+}

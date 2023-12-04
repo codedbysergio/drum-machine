@@ -1,0 +1,19 @@
+.device {
+    margin: auto;
+    height: 25rem;
+    width: 30rem;
+    top: 48%;
+    left: 50%;
+    position: absolute;
+    border: 10px solid #666;
+    border-radius: 1rem;
+    background-color: hsl(100, 0%, 85%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+        "power name name name"
+        "pads pads pads panel";
+}
