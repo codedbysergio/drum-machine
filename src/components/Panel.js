@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import { DrumPadContext } from './App'
 import SoundbankA from './SoundbankA';
 import SoundbankB from './SoundbankB';
-import { current } from '@reduxjs/toolkit'
 
 export default function Panel({currentSound, drumPadsA, activePads, soundbankAisActive}) {
   
