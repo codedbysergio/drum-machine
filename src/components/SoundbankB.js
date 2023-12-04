@@ -1,5 +1,4 @@
 import React from 'react'
-import { current } from '@reduxjs/toolkit'
 
 export default function SoundbankB() {
     

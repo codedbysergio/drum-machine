@@ -3,7 +3,6 @@ import '../css/app.css';
 import Device from './Device';
 import drumPadsA from '../data/drumPadsA.json';
 import drumPadsB from '../data/drumPadsB.json';
-import { act } from 'react-dom/test-utils';
 
 export const DrumPadContext = React.createContext()
 
@@ -37,7 +36,6 @@ function App() {
     <div className='container'>
       <DrumPadContext.Provider value={drumContextValue}>
         <Device 
-          id="drum-machine"
           drumPads={activePads} 
           currentSound={currentSound}
           drumPadsA={drumPadsA}
