@@ -1,7 +1,6 @@
 
 .panel-container {
     display: inline-block;
-    /* border: 3px solid aqua; */
     align-items: center;
     grid-area: panel;
     margin-top: 1.1rem;
@@ -30,7 +29,6 @@
 .soundbank-container {
     display: flexbox;
     margin-top: 0.5rem;
-    /* border: 1px solid black; */
     height: 4rem;
     margin-right: 1rem;
     width: 6.4rem;
@@ -75,7 +73,6 @@
 
 .volume-container {
     display: grid;
-    /* border: 1px solid black; */
     margin-top: 1rem;
     margin-right: 1rem;
     justify-content: center;
@@ -83,8 +80,7 @@
 }
 
 .volume-slider {
-    /*-webkit-appearance: slider-vertical; /* Chromium */
-    -webkit-appearance: slider-vertical;
+    appearance: slider-vertical;
     width: 4rem;
     height: 10.5rem;
     color: grey;
