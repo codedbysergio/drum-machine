@@ -6,18 +6,23 @@ export default function Pads( {drumPads} ) {
   const { handleSetCurrentSound } = useContext(DrumPadContext)
 
   //plays sound
-  function handlePressPad(selector) {
-    const audio = document.getElementById(selector.text);
+  function handlePressPad(drumPad) {
+    const audio = document.getElementById(drumPad.text);
     audio.play();
-    handleSetCurrentSound(selector.name);
+    handleSetCurrentSound(drumPad.name);
   }
 
   //plays sounds when key is pressed
   useEffect(() => {
     document.addEventListener('keydown', (event) => {
       for (let pad in drumPads) {
-        if (event.key.toString().toUpperCase() === drumPads[pad]["text"]) {
-          handlePressPad(drumPads[pad]);
+        if (event.key.toUpperCase() === drumPads[pad].text) {
+          const thisPad = drumPads[pad];
+          handlePressPad(thisPad);
+          const thisElement = document.getElementById(thisPad.name);
+          thisElement.className = "pressed-drum-pad";
+          setTimeout(() => {
+            thisElement.className = "drum-pad"}, 150);
         }
       }
     })
@@ -30,7 +35,7 @@ export default function Pads( {drumPads} ) {
           <div 
             key={drumPad.src}
             className='drum-pad' 
-            id={drumPad.src}
+            id={drumPad.name}
             onClick={() => handlePressPad(drumPad)}
           >
             {drumPad.text}
