@@ -29,13 +29,6 @@
 }
 
 .pressed-drum-pad {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    color: hsl(100, 0%, 90%);
     background-color: hsl(100, 0%, 55%);
     border: 3px solid hsl(100, 0%, 45%);
-    border-radius: 0.4rem;
-    font-weight: bolder;
-    font-size: 1rem;
 }
